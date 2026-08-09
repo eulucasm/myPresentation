@@ -1,0 +1,62 @@
+.contactContainer {
+  background-color: var(--color-light);
+  border-radius: var(--border-radius);
+  padding: 64px;
+  display: flex;
+  gap: 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.formWrapper {
+  flex: 1;
+  z-index: 10;
+}
+.illustration {
+  flex: 1;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+@media (min-width: 900px) {
+  .illustration { display: flex; }
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.formGroup label {
+  font-family: var(--font-heading);
+  font-weight: 500;
+}
+.formGroup input, .formGroup textarea {
+  padding: 16px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-dark);
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+.formGroup textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+/* Abstract illustration shapes */
+.shapeStar {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 400px;
+  background-color: var(--color-dark);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  animation: rotate 60s linear infinite;
+}
+@keyframes rotate {
+  from { transform: translateY(-50%) rotate(0deg); }
+  to { transform: translateY(-50%) rotate(360deg); }
+}

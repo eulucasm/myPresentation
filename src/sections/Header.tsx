@@ -1,0 +1,58 @@
+import { useState } from 'react';
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
+import styles from './Header.module.css';
+
+export const Header = () => {
+  const { scrollY } = useScroll();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setIsScrolled(latest > 50);
+  });
+
+  return (
+    <div style={{ 
+      position: 'fixed', 
+      top: 0, 
+      left: 0, 
+      width: '100%', 
+      zIndex: 100, 
+      display: 'flex', 
+      justifyContent: 'center', 
+      pointerEvents: 'none' // Ensures the wrapper doesn't block clicks on the page
+    }}>
+      <motion.header
+        initial={false}
+        animate={{
+          y: isScrolled ? 24 : 0,
+          width: isScrolled ? 'fit-content' : '100%',
+          borderRadius: isScrolled ? '40px' : '0px',
+          border: isScrolled ? 'var(--border-width) solid var(--color-dark)' : 'var(--border-width) solid transparent',
+          borderBottom: 'var(--border-width) solid var(--color-dark)',
+          boxShadow: isScrolled ? 'var(--shadow-brutalist)' : 'none',
+          padding: isScrolled ? '12px 32px' : '24px 24px',
+          backgroundColor: 'var(--color-white)'
+        }}
+        transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+        style={{ 
+          pointerEvents: 'auto', // Re-enable clicks for the header itself
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          maxWidth: isScrolled ? 'auto' : '1200px',
+          margin: '0 auto'
+        }}
+      >
+        <nav className={styles.nav} style={{ margin: 0, gap: isScrolled ? '16px' : '24px', transition: 'gap 0.3s' }}>
+          <a href="#" style={{ fontWeight: 600, color: 'var(--color-dark)', textDecoration: 'none' }}>Início</a>
+          <a href="#about" style={{ fontWeight: 600, color: 'var(--color-dark)', textDecoration: 'none' }}>Sobre</a>
+          <a href="#value" style={{ fontWeight: 600, color: 'var(--color-dark)', textDecoration: 'none' }}>Valor</a>
+          <a href="#experience" style={{ fontWeight: 600, color: 'var(--color-dark)', textDecoration: 'none' }}>Experiência</a>
+          <a href="#skills" style={{ fontWeight: 600, color: 'var(--color-dark)', textDecoration: 'none' }}>Habilidades</a>
+          <a href="#education" style={{ fontWeight: 600, color: 'var(--color-dark)', textDecoration: 'none' }}>Formação</a>
+          <a href="#process" style={{ fontWeight: 600, color: 'var(--color-dark)', textDecoration: 'none' }}>Método</a>
+        </nav>
+      </motion.header>
+    </div>
+  );
+};

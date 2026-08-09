@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  /* Cores Positivus */
+  --color-primary: #B9FF66;
+  --color-dark: #191A23;
+  --color-light: #F3F3F3;
+  --color-white: #FFFFFF;
+  
+  /* Tokens Neo-Brutalistas */
+  --border-radius: 14px;
+  --border-width: 2px;
+  --border-color: var(--color-dark);
+  
+  --shadow-brutalist: 5px 5px 0px 0px var(--color-dark);
+  --shadow-brutalist-hover: 8px 8px 0px 0px var(--color-dark);
+  
+  /* Tipografia */
+  --font-heading: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

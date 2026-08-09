@@ -1,0 +1,25 @@
+.card {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  border: var(--border-width) solid var(--color-dark);
+  box-shadow: var(--shadow-brutalist);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-brutalist-hover);
+  transform: translateY(-2px);
+}
+
+.card.green {
+  background-color: var(--color-primary);
+}
+
+.card.dark {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
