@@ -39,8 +39,9 @@ export const Header = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          maxWidth: isScrolled ? 'auto' : '1200px',
-          margin: '0 auto'
+          maxWidth: isScrolled ? 'calc(100% - 32px)' : '1200px',
+          margin: '0 auto',
+          overflow: 'hidden'
         }}
       >
         <nav className={styles.nav} style={{ margin: 0, gap: isScrolled ? '16px' : '24px', transition: 'gap 0.3s' }}>

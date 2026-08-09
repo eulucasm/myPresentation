@@ -38,6 +38,8 @@
   font-family: var(--font-body);
   font-size: 1.125rem;
   transition: color 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .nav a:hover {
   color: var(--color-primary);
