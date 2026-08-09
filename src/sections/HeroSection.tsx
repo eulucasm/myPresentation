@@ -3,7 +3,7 @@ import { Button } from '../components/Button';
 
 export const HeroSection = () => {
   return (
-    <section style={{ padding: '80px 24px', maxWidth: '1200px', margin: '0 auto', minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
+    <section style={{ padding: '160px 24px 80px', maxWidth: '1200px', margin: '0 auto', minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '48px', alignItems: 'center' }}>
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
