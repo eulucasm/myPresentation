@@ -14,7 +14,7 @@ export const SkillsSection = () => {
     <section id="skills" style={{ padding: '40px 24px' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '40px', flexWrap: 'wrap' }}>
-          <h2 style={{ fontSize: '2.5rem', backgroundColor: 'var(--color-primary)', padding: '0 8px', borderRadius: '8px' }}>
+          <h2 style={{ fontSize: 'clamp(1.75rem, 5vw, 2.5rem)', backgroundColor: 'var(--color-primary)', padding: '0 8px', borderRadius: '8px' }}>
             Áreas de Expertise
           </h2>
           <p style={{ maxWidth: '600px', fontSize: '1.125rem' }}>
@@ -40,7 +40,7 @@ export const SkillsSection = () => {
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                       <h3 style={{ 
-                        fontSize: '1.5rem', 
+                        fontSize: 'clamp(1.25rem, 4vw, 1.5rem)', 
                         backgroundColor: titleBgClass, 
                         color: titleColorClass, 
                         padding: '4px 8px', 

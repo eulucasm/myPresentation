@@ -25,19 +25,19 @@ export const AboutSection = () => {
           transition={{ duration: 0.5 }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '40px', flexWrap: 'wrap' }}>
-            <h2 style={{ fontSize: '2.5rem', backgroundColor: 'var(--color-primary)', padding: '0 8px', borderRadius: '8px', color: 'var(--color-dark)' }}>
+            <h2 style={{ fontSize: 'clamp(1.75rem, 5vw, 2.5rem)', backgroundColor: 'var(--color-primary)', padding: '0 8px', borderRadius: '8px', color: 'var(--color-dark)' }}>
               Sobre Mim
             </h2>
           </div>
           
           <Card variant="light" style={{ padding: '40px' }}>
-            <p style={{ fontSize: '1.25rem', lineHeight: 1.6, marginBottom: '16px', color: 'var(--color-dark)' }}>
+            <p style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', lineHeight: 1.6, marginBottom: '16px', color: 'var(--color-dark)' }}>
               Sou um Engenheiro de Software Sênior apaixonado pelo <strong>Desenvolvimento de Software</strong> como um todo, criando soluções escaláveis para todas as plataformas e não me limitando a apenas uma stack. Com uma forte base em Infraestrutura e Redes, possuo uma visão ponta a ponta do ciclo de vida das aplicações.
             </p>
-            <p style={{ fontSize: '1.25rem', lineHeight: 1.6, marginBottom: '16px', color: 'var(--color-dark)' }}>
+            <p style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', lineHeight: 1.6, marginBottom: '16px', color: 'var(--color-dark)' }}>
               Atualmente, desenvolvo soluções focadas em arquitetura robusta, me preocupando profundamente com o <strong>System Design</strong> para garantir que os produtos suportem alto crescimento e estejam preparados para o futuro.
             </p>
-            <p style={{ fontSize: '1.25rem', lineHeight: 1.6, marginBottom: '0', color: 'var(--color-dark)' }}>
+            <p style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', lineHeight: 1.6, marginBottom: '0', color: 'var(--color-dark)' }}>
               Tenho forte vivência técnica e de negócios nos setores de <strong>Banking e Meios de Pagamento</strong>, liderando integrações e entregas críticas onde a segurança, resiliência e performance são absolutamente inegociáveis.
             </p>
             <div style={{ 
@@ -45,7 +45,7 @@ export const AboutSection = () => {
               color: 'var(--color-primary)', 
               padding: '24px', 
               borderRadius: '8px', 
-              fontSize: '1.25rem',
+              fontSize: 'clamp(1rem, 3vw, 1.25rem)',
               fontWeight: 600,
               fontStyle: 'italic',
               marginTop: '24px',
@@ -64,8 +64,8 @@ export const AboutSection = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginBottom: '40px' }}>
-            <h3 style={{ fontSize: '1.5rem' }}>O ferramental que utilizo para escalar negócios</h3>
-            <h2 style={{ fontSize: '2.5rem', backgroundColor: 'var(--color-primary)', padding: '0 8px', borderRadius: '8px', color: 'var(--color-dark)', display: 'inline-block', alignSelf: 'flex-start' }}>
+            <h3 style={{ fontSize: 'clamp(1.25rem, 4vw, 1.5rem)' }}>O ferramental que utilizo para escalar negócios</h3>
+            <h2 style={{ fontSize: 'clamp(1.75rem, 5vw, 2.5rem)', backgroundColor: 'var(--color-primary)', padding: '0 8px', borderRadius: '8px', color: 'var(--color-dark)', display: 'inline-block', alignSelf: 'flex-start' }}>
               Conhecimentos
             </h2>
           </div>
@@ -73,7 +73,7 @@ export const AboutSection = () => {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
             {competencies.map((comp, idx) => (
               <Card key={idx} variant="light" style={{ padding: '32px' }}>
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '24px', color: 'var(--color-dark)', fontWeight: 700 }}>{comp.category}</h3>
+                <h3 style={{ fontSize: 'clamp(1.25rem, 4vw, 1.5rem)', marginBottom: '24px', color: 'var(--color-dark)', fontWeight: 700 }}>{comp.category}</h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
                   {comp.items.map((item, i) => (
                     <span key={i} style={{ 

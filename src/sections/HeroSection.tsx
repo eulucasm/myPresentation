@@ -4,16 +4,16 @@ import { Button } from '../components/Button';
 export const HeroSection = () => {
   return (
     <section style={{ padding: '80px 24px', maxWidth: '1200px', margin: '0 auto', minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px', alignItems: 'center' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '48px', alignItems: 'center' }}>
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 style={{ fontSize: '4rem', marginBottom: '24px', lineHeight: 1.1 }}>
+          <h1 style={{ fontSize: 'clamp(2.5rem, 8vw, 4rem)', marginBottom: '24px', lineHeight: 1.1 }}>
             Construindo soluções <span style={{ backgroundColor: 'var(--color-primary)', padding: '0 8px', borderRadius: '4px' }}>escaláveis</span> e inovadoras.
           </h1>
-          <p style={{ fontSize: '1.25rem', marginBottom: '24px', color: '#4B5563', lineHeight: 1.6 }}>
+          <p style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', marginBottom: '24px', color: '#4B5563', lineHeight: 1.6 }}>
             Olá, sou Lucas Marques. Engenheiro de Software Sênior com forte foco em arquitetura, system design e desenvolvimento ponta a ponta. Construo fundações sólidas e escaláveis que resolvem problemas reais de negócio, entregando desde integrações críticas em backend até experiências fluidas no mobile, independente da plataforma.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>

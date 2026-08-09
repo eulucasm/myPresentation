@@ -5,7 +5,7 @@ export const ContactSection = () => {
   return (
     <section id="contact" style={{ padding: '80px 24px' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '64px', flexWrap: 'wrap' }}>
-        <h2 style={{ fontSize: '2.5rem', backgroundColor: 'var(--color-primary)', padding: '0 8px', borderRadius: '8px' }}>
+        <h2 style={{ fontSize: 'clamp(1.75rem, 5vw, 2.5rem)', backgroundColor: 'var(--color-primary)', padding: '0 8px', borderRadius: '8px' }}>
           Contato
         </h2>
         <p style={{ maxWidth: '500px', fontSize: '1.125rem' }}>

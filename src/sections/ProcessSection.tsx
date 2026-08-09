@@ -32,7 +32,7 @@ export const ProcessSection = () => {
   return (
     <section id="process" style={{ padding: '40px 24px', maxWidth: '1000px', margin: '0 auto' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '40px', flexWrap: 'wrap' }}>
-        <h2 style={{ fontSize: '2.5rem', backgroundColor: 'var(--color-primary)', padding: '0 8px', borderRadius: '8px' }}>
+        <h2 style={{ fontSize: 'clamp(1.75rem, 5vw, 2.5rem)', backgroundColor: 'var(--color-primary)', padding: '0 8px', borderRadius: '8px' }}>
           Metodologia de Trabalho
         </h2>
         <p style={{ maxWidth: '500px', fontSize: '1.125rem' }}>

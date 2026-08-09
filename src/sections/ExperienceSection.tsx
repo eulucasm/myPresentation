@@ -56,7 +56,7 @@ export const ExperienceSection = () => {
     <section id="experience" style={{ padding: '80px 24px', backgroundColor: 'var(--color-light)' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '64px', flexWrap: 'wrap' }}>
-          <h2 style={{ fontSize: '2.5rem', backgroundColor: 'var(--color-primary)', padding: '0 8px', borderRadius: '8px' }}>
+          <h2 style={{ fontSize: 'clamp(1.75rem, 5vw, 2.5rem)', backgroundColor: 'var(--color-primary)', padding: '0 8px', borderRadius: '8px' }}>
             Experiência
           </h2>
           <p style={{ maxWidth: '500px', fontSize: '1.125rem' }}>
@@ -76,7 +76,7 @@ export const ExperienceSection = () => {
               <Card variant={index % 2 === 0 ? "light" : "green"}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '16px' }}>
                   <div>
-                    <h3 style={{ fontSize: '1.5rem', marginBottom: '8px' }}>{exp.role}</h3>
+                    <h3 style={{ fontSize: 'clamp(1.25rem, 4vw, 1.5rem)', marginBottom: '8px' }}>{exp.role}</h3>
                     <p style={{ fontSize: '1.125rem', fontWeight: 600 }}>{exp.company}</p>
                   </div>
                   <span style={{ fontWeight: 500 }}>{exp.period}</span>

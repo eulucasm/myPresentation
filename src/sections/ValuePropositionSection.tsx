@@ -43,7 +43,7 @@ export const ValuePropositionSection = () => {
         >
           <div style={{ display: 'flex', flexWrap: 'wrap' }}>
             <h2 style={{ 
-              fontSize: '2.5rem', 
+              fontSize: 'clamp(1.75rem, 5vw, 2.5rem)', 
               backgroundColor: 'var(--color-primary)', 
               padding: '0 8px', 
               borderRadius: '8px', 
@@ -52,7 +52,7 @@ export const ValuePropositionSection = () => {
               Como posso ajudar a sua empresa?
             </h2>
           </div>
-          <p style={{ fontSize: '1.25rem', color: 'var(--color-dark)', lineHeight: 1.6, maxWidth: '900px' }}>
+          <p style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', color: 'var(--color-dark)', lineHeight: 1.6, maxWidth: '900px' }}>
             Contratar um Engenheiro Sênior não é apenas sobre adicionar mãos ao teclado. É sobre trazer visão estratégica, previsibilidade nas entregas e maturidade para o seu produto.
           </p>
         </motion.div>
@@ -75,7 +75,7 @@ export const ValuePropositionSection = () => {
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                       <h3 style={{ 
-                        fontSize: '1.5rem', 
+                        fontSize: 'clamp(1.25rem, 4vw, 1.5rem)', 
                         backgroundColor: titleBgClass, 
                         color: titleColorClass, 
                         padding: '4px 8px', 

@@ -4,10 +4,10 @@ export const ContactFooter = () => {
   return (
     <footer style={{ backgroundColor: 'var(--color-dark)', color: 'var(--color-white)', padding: '64px 24px', borderRadius: '40px 40px 0 0', marginTop: '80px' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '32px' }}>
-        <h2 style={{ fontSize: '2.5rem', backgroundColor: 'var(--color-primary)', color: 'var(--color-dark)', padding: '0 8px', borderRadius: '8px' }}>
+        <h2 style={{ fontSize: 'clamp(1.75rem, 5vw, 2.5rem)', backgroundColor: 'var(--color-primary)', color: 'var(--color-dark)', padding: '0 8px', borderRadius: '8px' }}>
           Vamos Conversar?
         </h2>
-        <p style={{ fontSize: '1.25rem', maxWidth: '600px' }}>
+        <p style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', maxWidth: '600px' }}>
           Estou sempre aberto a novos desafios e oportunidades para colaborar em projetos escaláveis e inovadores.
         </p>
         

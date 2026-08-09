@@ -19,12 +19,20 @@
   gap: 8px;
 }
 .nav {
-  display: none;
-  gap: 32px;
+  display: flex;
+  gap: 16px;
   align-items: center;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  width: 100%;
+  padding-bottom: 4px; /* para não cortar a box-shadow ou outline */
+}
+.nav::-webkit-scrollbar {
+  display: none;
 }
 @media (min-width: 768px) {
-  .nav { display: flex; }
+  .nav { gap: 32px; overflow-x: visible; width: auto; padding-bottom: 0; }
 }
 .nav a {
   font-family: var(--font-body);

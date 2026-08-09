@@ -31,7 +31,7 @@ export const Footer = () => {
 
           {/* Coluna 2: Navegação */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', flex: '1', minWidth: '200px' }}>
-            <h3 style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--color-primary)', marginBottom: '8px' }}>Navegação</h3>
+            <h3 style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', fontWeight: 600, color: 'var(--color-primary)', marginBottom: '8px' }}>Navegação</h3>
             <nav style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <a href="#about" style={{ color: 'var(--color-white)', textDecoration: 'none', transition: 'color 0.2s' }}>Sobre</a>
               <a href="#experience" style={{ color: 'var(--color-white)', textDecoration: 'none', transition: 'color 0.2s' }}>Experiência</a>
@@ -42,7 +42,7 @@ export const Footer = () => {
 
           {/* Coluna 3: Redes Sociais */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', flex: '1', minWidth: '200px' }}>
-            <h3 style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--color-primary)', marginBottom: '8px' }}>Redes Sociais</h3>
+            <h3 style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', fontWeight: 600, color: 'var(--color-primary)', marginBottom: '8px' }}>Redes Sociais</h3>
             <div style={{ display: 'flex', gap: '16px' }}>
               <a href="https://www.linkedin.com/in/lucasmarques90/" target="_blank" rel="noreferrer" style={{ backgroundColor: 'var(--color-white)', color: 'var(--color-dark)', borderRadius: '50%', padding: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'transform 0.2s' }}>
                 <LinkedinIcon size={24} />

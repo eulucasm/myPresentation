@@ -39,7 +39,7 @@ export const EducationSection = () => {
           style={{ display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '48px', flexWrap: 'wrap' }}
         >
           <h2 style={{ 
-            fontSize: '2.5rem', 
+            fontSize: 'clamp(1.75rem, 5vw, 2.5rem)', 
             backgroundColor: 'var(--color-primary)', 
             padding: '4px 16px', 
             borderRadius: '8px', 
@@ -69,7 +69,7 @@ export const EducationSection = () => {
                   {item.icon}
                 </div>
                 <div style={{ flex: 1, minWidth: '250px' }}>
-                  <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--color-dark)', marginBottom: '8px' }}>
+                  <h3 style={{ fontSize: 'clamp(1.25rem, 4vw, 1.5rem)', fontWeight: 800, color: 'var(--color-dark)', marginBottom: '8px' }}>
                     {item.institution}
                   </h3>
                   <div style={{ fontSize: '1.125rem', fontWeight: 600, color: 'var(--color-dark)', marginBottom: '4px' }}>
