@@ -1,8 +1,8 @@
-# My Presentation 🚀
+# My Presentation
 
 Bem-vindo ao repositório do **MyPresentation**! Este é um projeto de portfólio/apresentação pessoal moderno, rápido e dinâmico, desenvolvido com as mais recentes tecnologias do ecossistema front-end.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 Este projeto foi construído utilizando uma stack moderna e performática:
 
@@ -13,7 +13,7 @@ Este projeto foi construído utilizando uma stack moderna e performática:
 - **[Lucide React](https://lucide.dev/)**: Ícones elegantes e consistentes.
 - **Oxlint**: Linter de altíssima performance para garantir a qualidade do código.
 
-## ⚙️ Como executar o projeto localmente
+## Como executar o projeto localmente
 
 Siga os passos abaixo para rodar o projeto na sua máquina:
 
@@ -51,7 +51,7 @@ Para testar a versão de produção localmente, você pode usar:
 npm run preview
 ```
 
-## 📝 Scripts Disponíveis
+## Scripts Disponíveis
 
 No arquivo `package.json`, você encontra os seguintes scripts úteis:
 
@@ -60,7 +60,7 @@ No arquivo `package.json`, você encontra os seguintes scripts úteis:
 - `npm run lint`: Executa a análise estática do código utilizando o **Oxlint**.
 - `npm run preview`: Inicia um servidor local para visualizar a build de produção.
 
-## ✨ Características do Projeto
+## Características do Projeto
 - **Animações e Micro-interações**: Foco em design imersivo e transições suaves graças ao Framer Motion.
 - **Configuração Minimalista e Veloz**: Benefícios do ecossistema Vite com Fast Refresh nativo.
 - **Estrutura Tipada**: Confiabilidade no desenvolvimento através do TypeScript.
